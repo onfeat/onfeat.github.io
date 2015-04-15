@@ -158,6 +158,94 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2014/05/17/如何个性化你的Hexo博客/" title="如何个性化你的Hexo博客" itemprop="url">如何个性化你的Hexo博客</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://yoursite.com/about" title="Zhiyong Cai" target="_blank" itemprop="author">Zhiyong Cai</a>
+		
+  <p class="article-time">
+    <time datetime="2014-05-16T16:00:00.000Z" itemprop="datePublished"> 发表于 2014-05-17</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h1 id="如何个性化你的Hexo博客">如何个性化你的Hexo博客</h1><p>本人对排版和设计很看重，直接影响写博客的心情，所以纠结研究了很久。<br>经验总结成本文，希望对大家有帮助！</p>
+<h2 id="1-克隆喜欢的主题">1.克隆喜欢的主题</h2><p>复制主题</p>
+<pre><code><span class="variable">$ </span>git clone <span class="symbol">https:</span>/<span class="regexp">/github.com/wuchong</span><span class="regexp">/jacman.git themes/jacman</span>
+
+<span class="variable">$ </span>git clone <span class="symbol">https:</span>/<span class="regexp">/github.com/</span><span class="constant">A-</span>limon/pacman.git themes/pacman
+</code></pre><p>（也可以直接下载，复制到 themes目录下即可）</p>
+<p>启用主题</p>
+<p>修改Hexo根目录下的config.yml配置文件中的theme属性，将其设置为对应的主题名，如 jacman。</p>
+<pre><code><span class="attribute">theme</span>: <span class="string">jacman</span>
+</code></pre><p>本地调试</p>
+<pre><code><span class="variable">$ </span>hexo clean
+<span class="variable">$ </span>hexo g
+<span class="variable">$ </span>hexo s
+</code></pre><p>更新主题</p>
+<pre><code><span class="variable">$ </span>cd themes/jacman
+<span class="variable">$ </span>git pull
+</code></pre><h2 id="2-插件安装">2.插件安装</h2><h3 id="多说评论功能">多说评论功能</h3><p>填写duoshuo_shortname多说的用户名，启用多说评论系统。在大陆地区更好用的评论系统</p>
+<p>shortname为（注册多说账号之后，你的子域名就是了，比如xxx.duoshuo.com，那么xxx就是shortname）</p>
+<h3 id="启用微博秀">启用微博秀</h3><p><img src="http://i.imgur.com/3NtRDHn.png" alt=""></p>
+<p>要启用微博秀，您必须填上author属性下tsina(必须是数字)和weibo_verifier（<a href="http://app.weibo.com/tool/weiboshow）的值" target="_blank" rel="external">http://app.weibo.com/tool/weiboshow）的值</a></p>
+<p><img src="http://i.imgur.com/PPwlP7e.jpg" alt=""></p>
+<p>Q:为什么开启了微博秀后，显示是空白的，没有内容展示？<br>A:每次修改参数都会这样，需要多刷新几次或者上传到服务器上就好了</p>
+<h3 id="首页显示模式_Index">首页显示模式 Index</h3><p>目前首页的显示模式支持两种，一种是原先的卡片式（前往 Demo 预览），另一种是类似官方主题的文章展开式（本站即采用的这种）。主题默认采用后一种展开式，如需开启第一种卡片式，请设置index属性下的expand: false。</p>
+<h3 id="目录_toc">目录 toc</h3><p>是否启用在文章中或侧边栏中的目录功能。二者可以都为true或都为false。同时，如果你希望在特定的某一篇文章中关闭目录功能你可以在文章文件开头中的front-matter中加上一行<strong>toc: false</strong>。如果希望在某一篇文章中关闭目录自动编号功能你可以在文章文件开头的front-matter中加上一行<strong>list_number: false</strong>。</p>
+<p>未完待续</p>
+<h2 id="Reference">Reference</h2><p>[1] <a href="http://wuchong.me/blog/2014/11/20/how-to-use-jacman/" target="_blank" rel="external">作者博客</a></p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Hexo/">Hexo</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2014/05/17/如何个性化你的Hexo博客/#comments" class="ds-thread-count comments-count-link" data-thread-key="2014/05/17/如何个性化你的Hexo博客/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2014/05/17/如何搭建你的Hexo博客/" title="如何搭建你的Hexo博客" itemprop="url">如何搭建你的Hexo博客</a>
   </h1>
   <p class="article-author">By
@@ -289,94 +377,6 @@ hexo <span class="variable">d =</span>= hexo deploy
 
 
 
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2014/05/17/如何个性化你的Hexo博客/" title="如何个性化你的Hexo博客" itemprop="url">如何个性化你的Hexo博客</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="http://yoursite.com/about" title="Zhiyong Cai" target="_blank" itemprop="author">Zhiyong Cai</a>
-		
-  <p class="article-time">
-    <time datetime="2014-05-16T16:00:00.000Z" itemprop="datePublished"> 发表于 2014-05-17</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h1 id="如何个性化你的Hexo博客">如何个性化你的Hexo博客</h1><p>本人对排版和设计很看重，直接影响写博客的心情，所以纠结研究了很久。<br>经验总结成本文，希望对大家有帮助！</p>
-<h2 id="1-克隆喜欢的主题">1.克隆喜欢的主题</h2><p>复制主题</p>
-<pre><code><span class="variable">$ </span>git clone <span class="symbol">https:</span>/<span class="regexp">/github.com/wuchong</span><span class="regexp">/jacman.git themes/jacman</span>
-
-<span class="variable">$ </span>git clone <span class="symbol">https:</span>/<span class="regexp">/github.com/</span><span class="constant">A-</span>limon/pacman.git themes/pacman
-</code></pre><p>（也可以直接下载，复制到 themes目录下即可）</p>
-<p>启用主题</p>
-<p>修改Hexo根目录下的config.yml配置文件中的theme属性，将其设置为对应的主题名，如 jacman。</p>
-<pre><code><span class="attribute">theme</span>: <span class="string">jacman</span>
-</code></pre><p>本地调试</p>
-<pre><code><span class="variable">$ </span>hexo clean
-<span class="variable">$ </span>hexo g
-<span class="variable">$ </span>hexo s
-</code></pre><p>更新主题</p>
-<pre><code><span class="variable">$ </span>cd themes/jacman
-<span class="variable">$ </span>git pull
-</code></pre><h2 id="2-插件安装">2.插件安装</h2><h3 id="多说评论功能">多说评论功能</h3><p>填写duoshuo_shortname多说的用户名，启用多说评论系统。在大陆地区更好用的评论系统</p>
-<p>shortname为（注册多说账号之后，你的子域名就是了，比如xxx.duoshuo.com，那么xxx就是shortname）</p>
-<h3 id="启用微博秀">启用微博秀</h3><p><img src="http://i.imgur.com/3NtRDHn.png" alt=""></p>
-<p>要启用微博秀，您必须填上author属性下tsina(必须是数字)和weibo_verifier（<a href="http://app.weibo.com/tool/weiboshow）的值" target="_blank" rel="external">http://app.weibo.com/tool/weiboshow）的值</a></p>
-<p><img src="http://i.imgur.com/PPwlP7e.jpg" alt=""></p>
-<p>Q:为什么开启了微博秀后，显示是空白的，没有内容展示？<br>A:每次修改参数都会这样，需要多刷新几次或者上传到服务器上就好了</p>
-<h3 id="首页显示模式_Index">首页显示模式 Index</h3><p>目前首页的显示模式支持两种，一种是原先的卡片式（前往 Demo 预览），另一种是类似官方主题的文章展开式（本站即采用的这种）。主题默认采用后一种展开式，如需开启第一种卡片式，请设置index属性下的expand: false。</p>
-<h3 id="目录_toc">目录 toc</h3><p>是否启用在文章中或侧边栏中的目录功能。二者可以都为true或都为false。同时，如果你希望在特定的某一篇文章中关闭目录功能你可以在文章文件开头中的front-matter中加上一行<strong>toc: false</strong>。如果希望在某一篇文章中关闭目录自动编号功能你可以在文章文件开头的front-matter中加上一行<strong>list_number: false</strong>。</p>
-<p>未完待续</p>
-<h2 id="Reference">Reference</h2><p>[1] <a href="http://wuchong.me/blog/2014/11/20/how-to-use-jacman/" target="_blank" rel="external">作者博客</a></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Hexo/">Hexo</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2014/05/17/如何个性化你的Hexo博客/#comments" class="ds-thread-count comments-count-link" data-thread-key="2014/05/17/如何个性化你的Hexo博客/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
 
 </div>
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
@@ -398,8 +398,6 @@ hexo <span class="variable">d =</span>= hexo deploy
 			<li><a href="/categories/健康/" title="健康">健康<sup>1</sup></a></li>
 		  
 		
-		  
-		
 		</ul>
 </div>
 
@@ -417,11 +415,12 @@ hexo <span class="variable">d =</span>= hexo deploy
 				<li><a href="/tags/计划、健康/" title="计划、健康">计划、健康<sup>1</sup></a></li>
 			
 		
-			
-		
 		</ul>
 </div>
 
+
+  
+<!--以下是QQ邮件列表订阅嵌入代码--><script >var nId = "2356f05d1cc845fff0c38dc24290907fd5d718b279daf37c",nWidth="auto",sColor="light",sText="输入您的邮件，与您共享：" ;</script><script src="/js/qqlist.js" charset="utf-8"></script>
 
   <div class="linkslist">
   <p class="asidetitle">友情链接</p>
