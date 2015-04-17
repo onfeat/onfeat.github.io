@@ -102,7 +102,8 @@
 <p>启用主题</p>
 <p>修改Hexo根目录下的config.yml配置文件中的theme属性，将其设置为对应的主题名，如 jacman。</p>
 <pre><code><span class="attribute">theme</span>: <span class="string">jacman</span>
-</code></pre><p>本地调试</p>
+</code></pre><a id="more"></a>
+<p>本地调试</p>
 <pre><code><span class="variable">$ </span>hexo clean
 <span class="variable">$ </span>hexo g
 <span class="variable">$ </span>hexo s
@@ -114,7 +115,6 @@
 <h3 id="启用微博秀">启用微博秀</h3><p><img src="http://i.imgur.com/3NtRDHn.png" alt=""></p>
 <p>要启用微博秀，您必须填上author属性下tsina(必须是数字)和weibo_verifier（<a href="http://app.weibo.com/tool/weiboshow）的值" target="_blank" rel="external">http://app.weibo.com/tool/weiboshow）的值</a></p>
 <p><img src="http://i.imgur.com/PPwlP7e.jpg" alt=""></p>
-<a id="more"></a>
 <p>Q:为什么开启了微博秀后，显示是空白的，没有内容展示？<br>A:每次修改参数都会这样，需要多刷新几次或者上传到服务器上就好了</p>
 <h3 id="首页显示模式_Index">首页显示模式 Index</h3><p>目前首页的显示模式支持两种，一种是原先的卡片式（前往 Demo 预览），另一种是类似官方主题的文章展开式（本站即采用的这种）。主题默认采用后一种展开式，如需开启第一种卡片式，请设置index属性下的expand: false。</p>
 <h3 id="目录_toc">目录 toc</h3><p>是否启用在文章中或侧边栏中的目录功能。二者可以都为true或都为false。同时，如果你希望在特定的某一篇文章中关闭目录功能你可以在文章文件开头中的front-matter中加上一行<strong>toc: false</strong>。如果希望在某一篇文章中关闭目录自动编号功能你可以在文章文件开头的front-matter中加上一行<strong>list_number: false</strong>。</p>
